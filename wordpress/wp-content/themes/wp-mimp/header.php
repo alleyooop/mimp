@@ -37,7 +37,7 @@
 				
 		<header role="banner">
 				
-			<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar navbar-inverse">
 				<div class="container">
           
           <div class="row" id="branding">
