@@ -12,6 +12,8 @@
 		            <?php endif; ?>
 		            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer3') ) : ?>
 		            <?php endif; ?>
+                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer4') ) : ?>
+		            <?php endif; ?>
 		          </div>  
             </div>            
           </div>
