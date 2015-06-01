@@ -3,6 +3,7 @@
 Description: This plugin registers the 'Condition' post type for MIMP. DO NOT DELETE
 Version: 0.1
 License: MIT
+Author: Andrew Duckworth
 */
 
 // Register Custom Post Type

@@ -1,8 +1,9 @@
 <?php
 /*Plugin Name: MIMP Service Post Type
-Description: This plugin registers the 'service' post type for MIMP. DO NOT DELETE
+Description: This plugin registers the 'Service' post type for MIMP. DO NOT DELETE
 Version: 0.1
 License: MIT
+Author: Andrew Duckworth
 */
 
 // Register Custom Post Type

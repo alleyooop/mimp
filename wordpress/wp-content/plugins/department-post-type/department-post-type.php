@@ -1,8 +1,9 @@
 <?php
 /*Plugin Name: MIMP Department Post Type
-Description: This plugin registers the 'department' post type for MIMP. DO NOT DELETE
+Description: This plugin registers the 'Department' post type for MIMP. DO NOT DELETE
 Version: 0.1
 License: MIT
+Author: Andrew Duckworth
 */
 
 
