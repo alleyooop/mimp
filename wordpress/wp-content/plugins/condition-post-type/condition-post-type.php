@@ -1,19 +1,18 @@
 <?php
-/*Plugin Name: MIMP Department Post Type
-Description: This plugin registers the 'department' post type for MIMP. DO NOT DELETE
+/*Plugin Name: MIMP Condition Post Type
+Description: This plugin registers the 'Condition' post type for MIMP. DO NOT DELETE
 Version: 0.1
 License: MIT
 */
 
-
 // Register Custom Post Type
-function custom_department_post_type() {
+function custom_condition_post_type() {
 
 	$labels = array(
-		'name'                => _x( 'Departments', 'Post Type General Name', 'text_domain' ),
-		'singular_name'       => _x( 'Department', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'           => __( 'Departments', 'text_domain' ),
-		'name_admin_bar'      => __( 'Departments', 'text_domain' ),
+		'name'                => _x( 'Conditions', 'Post Type General Name', 'text_domain' ),
+		'singular_name'       => _x( 'Condition', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'           => __( 'Conditions', 'text_domain' ),
+		'name_admin_bar'      => __( 'Conditions', 'text_domain' ),
 		'parent_item_colon'   => __( 'Parent Item:', 'text_domain' ),
 		'all_items'           => __( 'All Items', 'text_domain' ),
 		'add_new_item'        => __( 'Add New Item', 'text_domain' ),
@@ -27,8 +26,8 @@ function custom_department_post_type() {
 		'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
 	);
 	$args = array(
-		'label'               => __( 'mimp_department', 'text_domain' ),
-		'description'         => __( 'Individual Department of MIMP', 'text_domain' ),
+		'label'               => __( 'mimp_condition', 'text_domain' ),
+		'description'         => __( 'Individual condition', 'text_domain' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'trackbacks', 'revisions', 'custom-fields', ),
 		'taxonomies'          => array( 'category', 'post_tag' ),
@@ -45,10 +44,10 @@ function custom_department_post_type() {
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page',
 	);
-	register_post_type( 'mimp_department', $args );
+	register_post_type( 'mimp_condition', $args );
 
 }
 
 // Hook into the 'init' action
-add_action( 'init', 'custom_department_post_type', 0 );
+add_action( 'init', 'custom_condition_post_type', 0 );
 ?>
