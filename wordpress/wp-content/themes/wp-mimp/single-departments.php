@@ -1,28 +1,30 @@
 <?php get_header(); ?>
-  <div id="content" class="clearfix row">
+  <div id="content" class="clearfix">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     
       <div class="row">
-        <header><h1 itemprop="headline"><?php the_title(); ?></h1></header>
+        <header class="section-header">
+          <h1 itemprop="headline"><?php the_title(); ?></h1>
+        </header>
       </div>
-        
-      <div id="main" class="col-sm-8 clearfix" role="main">
-				<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix service-main'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+      
+      <div class="row clearfix">
+        <div id="main" class="col-sm-8" role="main">
+          <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix service-main'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 				
-          <section class="post_content clearfix well branded-well" itemprop="articleBody">
-						<?php the_content(); ?>
-						<?php wp_link_pages(); ?>
-					</section> <!-- end article section -->
-						
-					<footer>
-						<?php the_tags('<p class="tags"><span class="tags-title">' . __("Tags","wpbootstrap") . ':</span> ', ' ', '</p>'); ?>	
-					</footer> <!-- end article footer -->
+            <section class="post_content clearfix well branded-well" itemprop="articleBody">
+              <?php the_content(); ?>
+              <?php wp_link_pages(); ?>
+            </section> <!-- end article section -->
+
+            <footer>
+              <?php the_tags('<p class="tags"><span class="tags-title">' . __("Tags","wpbootstrap") . ':</span> ', ' ', '</p>'); ?>	
+            </footer> <!-- end article footer -->
 					
-				</article> <!-- end article -->
-            
-       </div> <!-- end #main col-8 -->
+				  </article> <!-- end article -->
+        </div>
         
-       <div id="sidebar" class="col-sm-4" role="complementary">
+        <div id="sidebar" class="col-sm-4" role="complementary">
                   
           <section class="well">
             <h4>Contact us</h4>
@@ -36,7 +38,7 @@
           <?php endif; ?>
 
         </div>
-            
+       </div> <!-- end #main -->
 					
 					<?php comments_template('',true); ?>
 					
