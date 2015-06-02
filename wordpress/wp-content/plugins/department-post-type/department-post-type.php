@@ -28,7 +28,7 @@ function custom_department_post_type() {
 		'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
 	);
 	$args = array(
-		'label'               => __( 'mimp_department', 'text_domain' ),
+		'label'               => __( 'departments', 'text_domain' ),
 		'description'         => __( 'Individual Department of MIMP', 'text_domain' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'trackbacks', 'revisions', 'custom-fields', ),
@@ -46,7 +46,7 @@ function custom_department_post_type() {
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page',
 	);
-	register_post_type( 'mimp_department', $args );
+	register_post_type( 'departments', $args );
 
 }
 

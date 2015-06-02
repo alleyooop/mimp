@@ -27,7 +27,7 @@ function custom_treatment_post_type() {
 		'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
 	);
 	$args = array(
-		'label'               => __( 'mimp_treatment', 'text_domain' ),
+		'label'               => __( 'treatments', 'text_domain' ),
 		'description'         => __( 'Individual treatment', 'text_domain' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'trackbacks', 'revisions', 'custom-fields', ),
@@ -45,7 +45,7 @@ function custom_treatment_post_type() {
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page',
 	);
-	register_post_type( 'mimp_treatment', $args );
+	register_post_type( 'treatments', $args );
 
 }
 
