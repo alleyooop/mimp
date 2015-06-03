@@ -599,10 +599,16 @@ if( !function_exists( "wp_bootstrap_theme_js" ) ) {
       get_template_directory_uri() . '/library/js/modernizr.js', 
       array('jquery'), 
       '1.2' );
+    
+    wp_register_script( 'sieve', 
+      get_template_directory_uri() . '/library/js/sieve.js', 
+      array('jquery'), 
+      '1.2' );
   
     wp_enqueue_script( 'bootstrap' );
     wp_enqueue_script( 'wpbs-js' );
     wp_enqueue_script( 'modernizr' );
+    wp_enqueue_script( 'sieve' );
     
   }
 }
