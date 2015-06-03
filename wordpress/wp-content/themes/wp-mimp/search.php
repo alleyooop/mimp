@@ -1,33 +1,44 @@
 <?php get_header(); ?>
-			
-			<div id="content" class="clearfix row">
-			
-				<div id="main" class="col col-lg-8 clearfix" role="main">
-				
-					<div class="page-header"><h1><span><?php _e("Search Results for","wpbootstrap"); ?>:</span> <?php echo esc_attr(get_search_query()); ?></h1></div>
+  <div id="content" class="clearfix">
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    
+      <div class="row">
+        <header class="section-header">
+          <h1 itemprop="headline"><span><?php _e("Search Results for","wpbootstrap"); ?>:</span> <?php echo esc_attr(get_search_query()); ?></h1>
+        </header>
+        
+        <ol class="breadcrumb">
+          <li><a href="<?php echo home_url( '/' ); ?>">Home</a></li>
+          <li class="active">Search</li>
+        </ol>
+        
+      </div>
+      
+      <div class="row clearfix">
+        <div id="main" class="col-sm-8" role="main">
+          
+          <form action="<?php echo home_url( '/' ); ?>" method="get" class="form-inline">
+              <fieldset>
+                <div class="input-group">
+                  <input type="text" name="s" id="search" placeholder="<?php _e("Search","wpbootstrap"); ?>" value="<?php the_search_query(); ?>" class="form-control" />
+                  <span class="input-group-btn">
+                    <button type="submit" class="btn btn-default"><?php _e("Search","wpbootstrap"); ?></button>
+                  </span>
+                </div>
+              </fieldset>
+          </form>
+          
 
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					
-					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-						
+					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix well'); ?> role="article">
 						<header>
-							
 							<h3><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-							
-							<p class="meta"><?php _e("Posted", "wpbootstrap"); ?> <time datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time(); ?></time> <?php _e("by", "wpbootstrap"); ?> <?php the_author_posts_link(); ?> <span class="amp">&</span> <?php _e("filed under", "wpbootstrap"); ?> <?php the_category(', '); ?>.</p>
-						
 						</header> <!-- end article header -->
 					
 						<section class="post_content">
 							<?php the_excerpt('<span class="read-more">' . __("Read more on","wpbootstrap") . ' "'.the_title('', '', false).'" &raquo;</span>'); ?>
-					
 						</section> <!-- end article section -->
-						
 						<footer>
-					
-							
 						</footer> <!-- end article footer -->
-					
 					</article> <!-- end article -->
 					
 					<?php endwhile; ?>	
@@ -61,11 +72,14 @@
 					</article>
 					
 					<?php endif; ?>
+          
+          
 			
 				</div> <!-- end #main -->
     			
     			<?php get_sidebar(); // sidebar 1 ?>
     
 			</div> <!-- end #content -->
+</div>
 
 <?php get_footer(); ?>
