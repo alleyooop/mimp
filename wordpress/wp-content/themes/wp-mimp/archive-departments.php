@@ -1,16 +1,23 @@
 <?php get_header(); ?>
-			
-			<div id="content" class="clearfix row">
-			
+  <div id="content" class="clearfix">
+
+      <div class="row">
+        <header class="section-header">
+          <h1>Departments</h1>
+        </header>
+        
+        <ol class="breadcrumb">
+          <li><a href="<?php echo home_url( '/' ); ?>">Home</a></li>
+          <li class="active">Departments</li>
+        </ol>
+      </div>
+    
+			<div class="row clearfix">
 				<div id="main" class="col-sm-8 clearfix" role="main">
-				
-					<div class="page-header">
-					<h1>Departments</h1>
-					</div>
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
-					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix well'); ?> role="article">
 						
 						<header>
 							
@@ -69,6 +76,7 @@
     
 				<?php get_sidebar(); // sidebar 1 ?>
     
+    </div>
 			</div> <!-- end #content -->
 
 <?php get_footer(); ?>

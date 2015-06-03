@@ -2,7 +2,7 @@
   <div id="content" class="clearfix">
 
       <div class="row">
-        <header class="page-header">
+        <header class="section-header">
           <?php if (is_category()) { ?>
 						<h1 class="archive_title h2">
 							<span><?php _e("Posts Categorized:", "wpbootstrap"); ?></span> <?php single_cat_title(); ?>
@@ -33,14 +33,10 @@
     
 			<div class="row clearfix">
 				<div id="main" class="col-sm-8 clearfix" role="main">
-				
-					<div class="page-header">
-
-					</div>
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
-					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix well'); ?> role="article">
 						
 						<header>
 							
