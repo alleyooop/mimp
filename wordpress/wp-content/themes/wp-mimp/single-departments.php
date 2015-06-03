@@ -6,6 +6,12 @@
         <header class="section-header">
           <h1 itemprop="headline"><?php the_title(); ?></h1>
         </header>
+        
+        <ol class="breadcrumb">
+          <li><a href="<?php echo home_url( '/' ); ?>">Home</a></li>
+          <li class="active"><?php the_title(); ?></li>
+        </ol>
+        
       </div>
       
       <div class="row clearfix">
