@@ -32,7 +32,7 @@ Template Name: Homepage
             <div class="container">
               <div class="row">
                   <div class="col-md-3 col-sm-6 col-xs-12">
-                    <a href="#">
+                    <a href="<?php echo home_url( '/patient-information/' ); ?>">
                       <img src="<?php echo content_url('/themes/wp-mimp/images/radiology-reception.jpg'); ?>" class="hidden-xs" width="100%">
                       <div class="well" id="">
                         <h4>Patient Information</h4>
@@ -42,7 +42,7 @@ Template Name: Homepage
                   </div>
 
                   <div class="col-md-3 col-sm-6 col-xs-12">
-                    <a href="#" class="hidden-xs" width="100%">
+                    <a href="<?php echo home_url( '/departments-and-services/' ); ?>" class="hidden-xs" width="100%">
                       <img src="<?php echo content_url('/themes/wp-mimp/images/services-stock.jpg'); ?>" class="hidden-xs" width="100%">
                       <div class="well" id="">
                         <h4>A-Z of Services</h4>

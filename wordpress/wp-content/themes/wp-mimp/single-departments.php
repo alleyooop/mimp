@@ -45,6 +45,8 @@
         </div>
         
         <div id="sidebar" class="col-sm-4" role="complementary">
+          
+          <?php get_template_part( 'partials/departments', 'button' ); ?>
                   
           <section class="well">
             <h4>Contact us</h4>
