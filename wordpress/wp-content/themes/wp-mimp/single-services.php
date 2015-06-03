@@ -9,7 +9,7 @@
         
         <ol class="breadcrumb">
           <li><a href="<?php echo home_url( '/' ); ?>">Home</a></li>
-          <li><a href="#">Departments &amp; Services</a></li>
+          <li><a href="<?php echo home_url( '/departments-and-services/' ); ?>">Departments &amp; Services</a></li>
           <li class="active"><?php the_title(); ?></li>
         </ol>
         

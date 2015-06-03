@@ -49,11 +49,10 @@ Template Name: Departments & Services Template
                     ?>
 
                       <section class='well'>
-                      <h3><?php the_title() ?></h3>
-
+                      <h3><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title() ?></a></h3>
                         <?php the_excerpt(); ?>
                       </section>
-
+                      <p class="pull-right"><a href="#" title="Back to the top">back to the top</a></p>
 
                     <?php
                   }
@@ -75,11 +74,10 @@ Template Name: Departments & Services Template
                     ?>
 
                       <section class='well'>
-                      <h3><?php the_title() ?></h3>
-
+                      <h3><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title() ?></a></h3>
                         <?php the_excerpt(); ?>
                       </section>
-
+                      <p class="pull-right"><a href="#" title="Back to the top">back to the top</a></p>
 
                     <?php
                   }
@@ -89,6 +87,15 @@ Template Name: Departments & Services Template
             </article>
 
         </div> <!-- end col-8 -->
+         
+         
+         <div id="sidebar" class="col-sm-4" role="complementary">
+                  
+          <?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
+             <?php dynamic_sidebar( 'sidebar1' ); ?>
+          <?php endif; ?>
+
+        </div>
          
          
          
