@@ -7,4 +7,30 @@
 
 ?>
 
-THIS WILL NEED THE QUERY CODE INSIDE IT BUT INSTEAD OF WELLS IT WILL BE INSIDE A BUTTON AND EACH POST WILL BE A LIST ITEM IN A BUTTON
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    Departments <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    
+    <?php // Get all of the departments
+
+                $args = array(
+                  'post_type' => 'departments'
+                );
+
+                $departments = new WP_Query( $args );
+
+                if( $departments->have_posts() ){
+                  while( $departments->have_posts() ) {
+                    $departments->the_post();
+                    ?>
+
+                       <li><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title() ?></a></li>
+
+                    <?php
+                  }
+                }
+              ?>
+  </ul>
+</div>
