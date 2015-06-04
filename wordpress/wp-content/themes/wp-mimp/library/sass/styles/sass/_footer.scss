@@ -1,0 +1,29 @@
+.main-footer {
+  
+  background-color: $brand-grey;
+  color: $body-bg;
+  padding: 40px;
+  margin-top: 35px;
+  border-top: 2px solid darken($brand-grey, 15%);
+  
+  h3 {
+    color: $body-bg;
+    font-size: 24px;
+  }
+  
+  a {
+    color: $body-bg;
+    text-decoration: underline;
+  }
+  
+  .btn {
+     color: $gray;
+     text-decoration: none;
+   }
+}
+
+.sub-footer {
+      background-color: darken($brand-grey, 20%);
+      color: #ffffff;
+      padding-top: 15px;
+}
