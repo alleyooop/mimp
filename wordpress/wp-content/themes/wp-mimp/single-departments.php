@@ -12,11 +12,7 @@
           <li><a href="<?php echo home_url( '/departments-and-services/' ); ?>">Departments &amp; Services</a></li>
           <li class="active"><?php the_title(); ?></li>
         </ol>
-        
-        <?php if ( function_exists('yoast_breadcrumb') ) {
-        yoast_breadcrumb();
-        } ?>
-        
+
       </div>
       
       <div class="row clearfix">

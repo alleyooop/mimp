@@ -730,4 +730,7 @@ function wp_bootstrap_filter_ptags_on_images( $content ){
 }
 add_filter( 'the_content', 'wp_bootstrap_filter_ptags_on_images' );
 
+// Filter Yoast Meta Priority
+add_filter( 'wpseo_metabox_prio', function() { return 'low';});
+
 ?>
