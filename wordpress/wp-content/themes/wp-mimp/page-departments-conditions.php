@@ -12,10 +12,9 @@ Template Name: Departments & Services Template
           <h1 itemprop="headline"><?php the_title(); ?></h1>
         </header>
         
-        <ol class="breadcrumb">
-          <li><a href="<?php echo home_url( '/' ); ?>">Home</a></li>
-          <li class="active"><?php the_title(); ?></li>
-        </ol>
+        <?php if ( function_exists('yoast_breadcrumb') ) {
+        yoast_breadcrumb();
+        } ?>
         
       </div>
 

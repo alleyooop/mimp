@@ -775,9 +775,9 @@ class WPSEO_Breadcrumbs {
 				if ( $i === 0 ) {
 					$link_output .= '<ol' . ' class="breadcrumb" typeof="v:Breadcrumb">';
 				}
-				else {
-					$link_output .= '<' . $this->element . ' rel="v:child" typeof="v:Breadcrumb">';
-				}
+				// else {
+					// $link_output .= '<' . $this->element . ' rel="v:child" typeof="v:Breadcrumb">';
+				// }
 				$link_output .= '<li><a href="' . esc_url( $link['url'] ) . '" rel="v:url" property="v:title">' . $link['text'] . '</a></li>';
 			}
 			else {

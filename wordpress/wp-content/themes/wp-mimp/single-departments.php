@@ -13,6 +13,10 @@
           <li class="active"><?php the_title(); ?></li>
         </ol>
         
+        <?php if ( function_exists('yoast_breadcrumb') ) {
+        yoast_breadcrumb();
+        } ?>
+        
       </div>
       
       <div class="row clearfix">
