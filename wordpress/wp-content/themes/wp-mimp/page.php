@@ -6,7 +6,14 @@
         <header class="section-header">
           <h1 itemprop="headline"><?php the_title(); ?></h1>
         </header>
+        
+        <?php if ( function_exists('yoast_breadcrumb') ) {
+        yoast_breadcrumb();
+        } ?>
+        
       </div>
+    
+    
       
       <div class="row clearfix">
         <div id="main" class="col-sm-8" role="main">
