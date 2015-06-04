@@ -30,23 +30,28 @@
 					
 				  </article> <!-- end article -->
           
-          <section class="team">
-            <div class="well">
-              <?php if(get_field('field_name')){
-                
-                echo the_field('mimp_team');
-  
-               } ?>
-              
-            </div>
-          </section>
+          <?php if(get_field('mimp_service_patient_information')) : ?>
+           <section id="patient-information">
+              <div class="well">
+                  <?php the_field('mimp_service_patient_information'); ?>
+              </div>
+              </section>
+            <?php endif; ?>   
+          
+          <?php if(get_field('mimp_team')) : ?>
+              <section class="team">
+                <div class="well">
+                <?php the_field('mimp_team'); ?>
+                </div>
+             </section>
+            <?php endif; ?>
         </div>
         
         <div id="sidebar" class="col-sm-4" role="complementary">
                   
           <section class="well">
             <h4>Contact us</h4>
-            <p>If you have any questions please feel free to contact the service via the methods below</p>
+            <?php the_field('mimp_contact_text'); ?>
             <a href="mailto:<?php the_field('mimp_contact_email'); ?>" class="btn btn-warning" alt="email address">Email us</a>
             <a href="tel:<?php the_field('mimp_contact_number'); ?>" class="btn btn-link" alt="Radiography's telephone number">Call us</a>
           </section>
