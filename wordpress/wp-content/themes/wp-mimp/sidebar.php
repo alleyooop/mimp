@@ -4,16 +4,12 @@
 
 						<?php dynamic_sidebar( 'sidebar1' ); ?>
 
-					<?php else : ?>
-
-						<!-- This content shows up if there are no widgets defined in the backend. -->
-						
-						<div class="alert alert-message">
-						
-							<p><?php _e("Please activate some Widgets","wpbootstrap"); ?>.</p>
-						
-						</div>
-
 					<?php endif; ?>
+          
+      <section class="well" id="dropdown-buttons">
+        <h4>Our Departments &amp; Services</h4>
+        <p>Locate the dedicated department and service pages through our <a href="<?php echo home_url( '/departments-and-services/' ); ?>" alt="link to the department and service A-Z" class="">department &amp; services page</a> or the directory below:</p>
+        <?php get_template_part( 'partials/department', 'button' ); ?> <?php get_template_part( 'partials/service', 'button' ); ?>
+      </section>
 
 				</div>

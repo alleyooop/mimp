@@ -12,8 +12,14 @@
 		            <?php endif; ?>
 		            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer3') ) : ?>
 		            <?php endif; ?>
-                <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer4') ) : ?>
-		            <?php endif; ?>
+                <div id="text-6" class="widget col-sm-3 widget_text">
+                  <h3 class="widgettitle">Departments &amp; Services</h3>
+                  <div class="textwidget">
+                     <p>Locate the dedicated department and service pages through our <a href="<?php echo home_url( '/departments-and-services/' ); ?>" alt="link to the department and service A-Z" class="">department &amp; services page</a> or the directory below:</p>
+                      <?php get_template_part( 'partials/department', 'button' ); ?> <?php get_template_part( 'partials/service', 'button' ); ?>
+                  </div>
+                </div>
+       
 		          </div>  
             </div>            
           </div>

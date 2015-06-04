@@ -90,6 +90,12 @@ Template Name: Departments & Services Template
          
          
          <div id="sidebar" class="col-sm-4" role="complementary">
+           
+           <section class="well" id="dropdown-buttons">
+            <h4>Our Departments &amp; Services</h4>
+            <p>Locate the dedicated department and service pages through the directory below:</p>
+            <?php get_template_part( 'partials/department', 'button' ); ?> <?php get_template_part( 'partials/service', 'button' ); ?>
+          </section>
                   
           <?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
              <?php dynamic_sidebar( 'sidebar1' ); ?>
