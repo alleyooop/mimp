@@ -1,23 +1,6 @@
 <?php get_header(); ?>
-  <div id="content" class="clearfix">
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-    
-      <div class="row">
-        <header class="section-header">
-          <h1 itemprop="headline"><span><?php _e("Search Results for","wpbootstrap"); ?>:</span> <?php echo esc_attr(get_search_query()); ?></h1>
-        </header>
-        
-        <ol class="breadcrumb">
-          <li><a href="<?php echo home_url( '/' ); ?>">Home</a></li>
-          <li class="active">Search</li>
-        </ol>
-        
-      </div>
-      
-      <div class="row clearfix">
-        <div id="main" class="col-sm-8" role="main">
-          
-          <form action="<?php echo home_url( '/' ); ?>" method="get" class="form-inline">
+
+ <form action="<?php echo home_url( '/' ); ?>" method="get" class="form-inline">
               <fieldset>
                 <div class="input-group">
                   <input type="text" name="s" id="search" placeholder="<?php _e("Search","wpbootstrap"); ?>" value="<?php the_search_query(); ?>" class="form-control" />
@@ -27,6 +10,11 @@
                 </div>
               </fieldset>
           </form>
+
+  <div id="content" class="clearfix">
+		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+         
           
 
 					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix well'); ?> role="article">
@@ -76,10 +64,5 @@
           
 			
 				</div> <!-- end #main -->
-    			
-    			<?php get_sidebar(); // sidebar 1 ?>
-    
-			</div> <!-- end #content -->
-</div>
 
 <?php get_footer(); ?>
