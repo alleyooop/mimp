@@ -47,11 +47,14 @@ Template Name: Departments & Services Template
                     $departments->the_post();
                     ?>
 
-                      <section class='well'>
-                      <h3><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title() ?></a></h3>
-                        <?php the_excerpt(); ?>
+                      <section>
+                        <div class="well">
+                          <h3><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title() ?></a></h3>
+                          <?php the_excerpt(); ?>
+                        </div>
+                          <p><a href="#" title="Back to the top">back to the top</a></p>
                       </section>
-                      <p><a href="#" title="Back to the top">back to the top</a></p>
+                      
 
                     <?php
                   }
@@ -72,11 +75,13 @@ Template Name: Departments & Services Template
                     $services->the_post();
                     ?>
 
-                      <section class='well'>
-                      <h3><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title() ?></a></h3>
-                        <?php the_excerpt(); ?>
+                      <section>
+                        <div class="well">
+                          <h3><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title() ?></a></h3>
+                          <?php the_excerpt(); ?>
+                        </div>
+                        <p><a href="#" title="Back to the top">back to the top</a></p>
                       </section>
-                      <p><a href="#" title="Back to the top">back to the top</a></p>
 
                     <?php
                   }
