@@ -22,7 +22,7 @@ Template Name: Departments & Services Template
         <div id="main" class="col-sm-8" role="main">
            <article class="filter-main">
               <section class="well branded-well">
-                <p class="lead">Duis autem vel eum iriure dolor in hendrerit in vulputate veli in hendrerit in vulputate veli. in hendrerit in vulputate veli in hendrerit in vulputate veli in hendrerit in vulputate veli</p>
+                <p class="lead">Medical Imaging &amp; Medical Physics is a multi-disciplinary department in the heart of South Yorkshire. Find the our range of departments and services below</p>
                 <p>To use the search functionality on this page, start typing into the white box below.</p>
                 <script>
                 jQuery(document).ready(function() {
