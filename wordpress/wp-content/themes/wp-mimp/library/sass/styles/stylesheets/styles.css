@@ -9204,72 +9204,57 @@ ul#navbar-mobile {
   min-height: 150px;
 }
 
-/* line 25, ../sass/_sections.scss */
-.service-main .well, .patient-main .well, .referral-main .well, .treatment-main .well, .condition-main .well, .department-main .well {
-  font-size: 18px;
-}
-
-/* line 32, ../sass/_sections.scss */
+/* line 23, ../sass/_sections.scss */
 .branded-well {
   border-top: 20px solid #03A9F4;
   border-left: 0;
   border-right: 0;
 }
 
-/* line 38, ../sass/_sections.scss */
+/* line 29, ../sass/_sections.scss */
 .condition-well, .treatment-well {
   border-left: 5px solid #03A9F4;
   border-top: 0px;
   border-bottom: 0px;
 }
 
-/* line 44, ../sass/_sections.scss */
+/* line 35, ../sass/_sections.scss */
 .case-study-unit {
   padding-top: 10px;
 }
-/* line 48, ../sass/_sections.scss */
+/* line 39, ../sass/_sections.scss */
 .case-study-unit img {
   max-width: 250px;
   padding-left: 10px;
 }
-/* line 53, ../sass/_sections.scss */
+/* line 44, ../sass/_sections.scss */
 .case-study-unit h5 {
   color: #03A9F4;
 }
 
-/* line 59, ../sass/_sections.scss */
+/* line 50, ../sass/_sections.scss */
 .list-hospitals {
   text-align: center;
 }
-/* line 63, ../sass/_sections.scss */
+/* line 54, ../sass/_sections.scss */
 .list-hospitals img {
   width: 200px;
   height: 200px;
 }
-/* line 68, ../sass/_sections.scss */
+/* line 59, ../sass/_sections.scss */
 .list-hospitals a {
   display: block;
 }
 
-/* line 75, ../sass/_sections.scss */
+/* line 66, ../sass/_sections.scss */
 #patient-information h4 {
   color: #03A9F4;
 }
 
-/* line 82, ../sass/_sections.scss */
+/* line 73, ../sass/_sections.scss */
 #contact_form {
   margin-top: 35px;
   padding: 5px;
-}
-
-/* line 90, ../sass/_sections.scss */
-.patient-main h3, .referral-main h3 {
-  color: #03A9F4;
-}
-
-/* line 99, ../sass/_sections.scss */
-.well-mimp h2 {
-  font-size: 28px;
 }
 
 /* line 1, ../sass/_typography.scss */
@@ -9297,6 +9282,25 @@ ul#navbar-mobile {
 /* line 19, ../sass/_typography.scss */
 .main-footer .btn {
   color: white;
+}
+
+/* line 25, ../sass/_typography.scss */
+.patient-main h3, .referral-main h3 {
+  color: #03A9F4;
+}
+
+/* line 34, ../sass/_typography.scss */
+.well-mimp h2 {
+  font-size: 30px;
+}
+/* line 40, ../sass/_typography.scss */
+.well-mimp h3 {
+  font-size: 27px;
+}
+
+/* line 49, ../sass/_typography.scss */
+.service-main .well, .patient-main .well, .referral-main .well, .treatment-main .well, .condition-main .well, .department-main .well {
+  font-size: 18px;
 }
 
 /* line 3, ../sass/_forms.scss */
