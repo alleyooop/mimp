@@ -20,15 +20,6 @@
   }
 }
 
-.service-main, .patient-main, .referral-main, .treatment-main, .condition-main, .department-main {
-  
-  .well {
-    font-size: 18px;
-      
-  }
-  
-}
-
 .branded-well {
   border-top: 20px solid $brand-primary;
   border-left: 0;
@@ -83,23 +74,4 @@
   
   margin-top: 35px;
   padding: 5px;
-}
-
-.patient-main, .referral-main {
-  
-  h3 {
-    
-    color: $brand-primary;
-  }
-  
-}
-
-.well-mimp {
-  
-  h2 {
-    
-    font-size: 28px;
-    
-  }
-  
 }

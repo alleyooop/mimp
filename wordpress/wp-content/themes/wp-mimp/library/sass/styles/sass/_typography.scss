@@ -19,3 +19,36 @@
 .main-footer .btn {
   color: white;
 }
+
+.patient-main, .referral-main {
+  
+  h3 {
+    
+    color: $brand-primary;
+  }
+  
+}
+
+.well-mimp {
+  
+  h2 {
+    
+    font-size: 30px;
+    
+  }
+  
+  h3 {
+    
+    font-size: 27px;
+  }
+  
+}
+
+.service-main, .patient-main, .referral-main, .treatment-main, .condition-main, .department-main {
+  
+  .well {
+    font-size: 18px;
+      
+  }
+  
+}
