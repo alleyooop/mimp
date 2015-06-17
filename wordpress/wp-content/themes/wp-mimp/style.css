@@ -9267,6 +9267,11 @@ ul#navbar-mobile {
   color: #03A9F4;
 }
 
+/* line 99, ../sass/_sections.scss */
+.well-mimp h2 {
+  font-size: 28px;
+}
+
 /* line 1, ../sass/_typography.scss */
 .list-service {
   font-size: 15px;
@@ -9300,5 +9305,15 @@ ul#navbar-mobile {
 }
 /* line 7, ../sass/_forms.scss */
 #search-form input {
+  width: 100%;
+}
+
+/* line 13, ../sass/_forms.scss */
+.comment-form-comment label {
+  display: block;
+}
+
+/* line 19, ../sass/_forms.scss */
+.comment-form-comment textarea#comment {
   width: 100%;
 }

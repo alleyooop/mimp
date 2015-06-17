@@ -31,7 +31,7 @@
 				  </article> <!-- end article -->
           
           <?php if(get_field('mimp_service_patient_information')) : ?>
-           <section id="patient-information" class="department-main">
+           <section id="patient-information" class="well-mimp">
               <div class="well">
                   <?php the_field('mimp_service_patient_information'); ?>
               </div>
