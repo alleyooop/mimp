@@ -37,7 +37,8 @@ Template Name: Departments & Services Template
             <?php // Get all of the departments
 
                 $args = array(
-                  'post_type' => 'departments'
+                  'post_type' => 'departments',
+                  'orderby'   => 'title',
                 );
 
                 $departments = new WP_Query( $args );
@@ -64,7 +65,8 @@ Template Name: Departments & Services Template
             <?php // Get all of the services
 
                 $args = array(
-                  'post_type' => 'services'
+                  'post_type' => 'services',
+                  'orderby'   => 'title',
                 );
 
                 $services = new WP_Query( $args );
