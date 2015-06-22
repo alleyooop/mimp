@@ -68,8 +68,7 @@
 
         </div>
        </div> <!-- end #main -->
-					
-					<?php comments_template('',true); ?>
+				
 					
 					<?php endwhile; ?>			
 					

@@ -34,7 +34,6 @@
         <?php get_sidebar(); // sidebar 1 ?>
        </div> <!-- end #main -->
 					
-					<?php comments_template('',true); ?>
 					
 					<?php endwhile; ?>			
 					

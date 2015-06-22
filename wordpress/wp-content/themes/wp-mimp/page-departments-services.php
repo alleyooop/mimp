@@ -52,7 +52,6 @@ Template Name: Departments & Services Template
                           <h3><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title() ?></a></h3>
                           <?php the_excerpt(); ?>
                         </div>
-                          <p><a href="#" title="Back to the top">back to the top</a></p>
                       </section>
                       
 
@@ -80,7 +79,6 @@ Template Name: Departments & Services Template
                           <h3><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title() ?></a></h3>
                           <?php the_excerpt(); ?>
                         </div>
-                        <p><a href="#" title="Back to the top">back to the top</a></p>
                       </section>
 
                     <?php
