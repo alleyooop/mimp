@@ -48,7 +48,21 @@
         
         <div id="sidebar" class="col-sm-4" role="complementary">
           
+          <?php if ( in_category( 'medical-imaging' )) : ?>
+          <div class="featured-image">
+           <a href="<?php echo home_url( '/departments/radiography/' ); ?>"> 
+            <img src="http://placehold.it/500x300?text=Radiology+Placeholder" width="100%" >
+           </a>
+          </div>
+           <?php endif; ?>
           
+          <?php if ( in_category( 'medical-physics' )) : ?>
+          <div class="featured-image">
+           <a href="<?php echo home_url( '/departments/medical-physics/' ); ?>"> 
+            <img src="http://placehold.it/500x300?text=Medical+Physics+Placeholder" width="100%" >
+           </a>
+          </div>
+           <?php endif; ?>
                   
           <section class="well">
             <h4>Contact us</h4>
