@@ -16,7 +16,9 @@
     <?php // Get all of the departments
 
                 $args = array(
-                  'post_type' => 'services'
+                  'post_type' => 'services',
+                  'orderby'   => 'title',
+		              'order'     => 'ASC'
                 );
 
                 $services = new WP_Query( $args );

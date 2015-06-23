@@ -39,6 +39,7 @@ Template Name: Departments & Services Template
                 $args = array(
                   'post_type' => 'departments',
                   'orderby'   => 'title',
+		              'order'     => 'ASC'
                 );
 
                 $departments = new WP_Query( $args );
@@ -67,6 +68,7 @@ Template Name: Departments & Services Template
                 $args = array(
                   'post_type' => 'services',
                   'orderby'   => 'title',
+		              'order'     => 'ASC'
                 );
 
                 $services = new WP_Query( $args );
