@@ -18,7 +18,8 @@
                 $args = array(
                   'post_type' => 'departments',
                   'orderby'   => 'title',
-		              'order'     => 'ASC'
+		              'order'     => 'ASC',
+                  'posts_per_page' => -1
                 );
 
                 $departments = new WP_Query( $args );

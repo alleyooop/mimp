@@ -18,7 +18,8 @@
                 $args = array(
                   'post_type' => 'services',
                   'orderby'   => 'title',
-		              'order'     => 'ASC'
+		              'order'     => 'ASC',
+                  'posts_per_page' => -1
                 );
 
                 $services = new WP_Query( $args );

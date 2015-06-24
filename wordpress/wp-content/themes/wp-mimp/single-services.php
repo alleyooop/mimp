@@ -72,6 +72,14 @@
             <a href="mailto:<?php the_field('mimp_contact_email'); ?>" class="btn btn-warning" alt="email address">Email us</a>
             <a href="tel:<?php the_field('mimp_contact_number'); ?>" class="btn btn-link" alt="Radiography's telephone number">Call us</a>
           </section>
+          
+          <?php if(get_field('commercial_sidebar')) : ?>
+              <section>
+                <div class="well">
+                <?php the_field('commercial_sidebar'); ?>
+                </div>
+             </section>
+          <?php endif; ?>
 
           <?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
              <?php dynamic_sidebar( 'sidebar1' ); ?>
@@ -83,9 +91,20 @@
         <?php get_template_part( 'partials/department', 'button' ); ?> <?php get_template_part( 'partials/service', 'button' ); ?>
       </section>
 
+
         </div>
        </div> <!-- end #main -->
-				
+    
+    
+    
+      <?php if(get_field('commercial_banner_true')) : ?>		
+            <div class="row clearfix">
+              <div class="col-sm-12">
+                <?php the_field('commercial_banner_true'); ?>
+              </div>
+            </div>
+      <?php endif; ?> 
+   
 					
 					<?php endwhile; ?>			
 					
