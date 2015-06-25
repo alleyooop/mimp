@@ -70,8 +70,14 @@
           <section class="well">
             <h4>Contact us</h4>
             <?php the_field('mimp_contact_text'); ?>
-            <a href="mailto:<?php the_field('mimp_contact_email'); ?>" class="btn btn-warning" alt="email address">Email us</a>
-            <a href="tel:<?php the_field('mimp_contact_number'); ?>" class="btn btn-link" alt="Radiography's telephone number">Call us</a>
+            
+             <?php if(get_field('mimp_contact_email')) : ?>
+              <a href="mailto:<?php the_field('mimp_contact_email'); ?>" class="btn btn-warning" alt="email address">Email us</a>
+             <?php endif; ?>
+            
+            <?php if(get_field('mimp_contact_number')) : ?>
+              <a href="tel:<?php the_field('mimp_contact_number'); ?>" class="btn btn-link" alt="Radiography's telephone number">Call us</a>
+            <?php endif; ?>
           </section>
           
          <?php if ( in_category( 'medical-imaging' )) : ?>
