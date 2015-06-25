@@ -49,9 +49,7 @@
         <div id="sidebar" class="col-sm-4" role="complementary">
           
           <?php if ( has_post_thumbnail()) : ?>
-          <div class="featured-image">
-            <?php the_post_thumbnail(); ?>
-          </div>
+             <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
           <?php endif; ?>
                   
           <section class="well">
