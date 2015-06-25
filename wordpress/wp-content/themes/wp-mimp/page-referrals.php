@@ -109,7 +109,7 @@ Template Name: Referrals Information Page
         
         <div id="sidebar" class="col-sm-4" role="complementary">
           <section class="well">
-            <h4>Questions</h4>
+            <h4>Referral Pathways</h4>
             <ul class="list-unstyled">
               <li><a href="#irefer_service">iRefer Service</a></li>
               <li><a href="#x-rays">X-Rays</a></li>

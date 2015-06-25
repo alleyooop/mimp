@@ -27,7 +27,7 @@ function custom_team_post_type() {
 		'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
 	);
 	$args = array(
-		'label'               => __( 'teams', 'text_domain' ),
+		'label'               => __( 'Teams', 'text_domain' ),
 		'description'         => __( 'Individual Team', 'text_domain' ),
 		'labels'              => $labels,
 		'supports'            => array( 'title', 'editor', 'trackbacks', 'revisions', 'custom-fields', 'page-attributes' ),
@@ -40,7 +40,7 @@ function custom_team_post_type() {
 		'show_in_admin_bar'   => true,
 		'show_in_nav_menus'   => true,
 		'can_export'          => true,
-		'has_archive'         => false,
+		'has_archive'         => true,
 		'exclude_from_search' => false,
 		'publicly_queryable'  => true,
 		'capability_type'     => 'page',
