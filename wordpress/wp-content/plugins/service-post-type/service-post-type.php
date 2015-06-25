@@ -1,7 +1,7 @@
 <?php
 /*Plugin Name: MIMP Service Post Type
 Description: This plugin registers the 'Service' post type for MIMP. DO NOT DELETE
-Version: 0.1
+Version: 0.2
 License: MIT
 Author: Andrew Duckworth
 */
@@ -30,7 +30,7 @@ function custom_service_post_type() {
 		'label'               => __( 'services', 'text_domain' ),
 		'description'         => __( 'Individual Service of MIMP', 'text_domain' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title', 'editor', 'trackbacks', 'revisions', 'custom-fields', 'page-attributes' ),
+		'supports'            => array( 'title', 'editor', 'trackbacks', 'revisions', 'custom-fields', 'page-attributes', 'thumbnail' ),
 		'taxonomies'          => array( 'category', 'post_tag' ),
 		'hierarchical'        => true,
 		'public'              => true,
