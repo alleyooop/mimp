@@ -53,6 +53,11 @@
                 </div>
              </section>
             <?php endif; ?>
+          
+          <div id="return">
+            <a href="<?php echo home_url( '/departments-and-services/' ); ?>">Back to Departments &amp; Services</a>
+          </div>
+          
         </div>
         
         <div id="sidebar" class="col-sm-4" role="complementary">
