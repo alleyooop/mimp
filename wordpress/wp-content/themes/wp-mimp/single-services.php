@@ -39,9 +39,17 @@
             <?php endif; ?>   
           
           <?php if(get_field('mimp_team')) : ?>
-              <section class="team">
+              <section class="well-mimp">
                 <div class="well">
                 <?php the_field('mimp_team'); ?>
+                </div>
+             </section>
+            <?php endif; ?>
+          
+          <?php if(get_field('commercial_main')) : ?>
+              <section class="well-mimp">
+                <div class="well">
+                <?php the_field('commercial_main'); ?>
                 </div>
              </section>
             <?php endif; ?>
@@ -97,10 +105,10 @@
     
     
     
-      <?php if(get_field('commercial_banner_true')) : ?>		
+      <?php if(get_field('commercial_banner')) : ?>		
             <div class="row clearfix">
               <div class="col-sm-12">
-                <?php the_field('commercial_banner_true'); ?>
+                <?php the_field('commercial_banner'); ?>
               </div>
             </div>
       <?php endif; ?> 

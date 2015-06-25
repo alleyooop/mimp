@@ -30,7 +30,7 @@ function custom_service_post_type() {
 		'label'               => __( 'services', 'text_domain' ),
 		'description'         => __( 'Individual Service of MIMP', 'text_domain' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title', 'editor', 'trackbacks', 'revisions', 'custom-fields', ),
+		'supports'            => array( 'title', 'editor', 'trackbacks', 'revisions', 'custom-fields', 'page-attributes' ),
 		'taxonomies'          => array( 'category', 'post_tag' ),
 		'hierarchical'        => true,
 		'public'              => true,

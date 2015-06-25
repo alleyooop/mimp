@@ -31,7 +31,7 @@ function custom_department_post_type() {
 		'label'               => __( 'departments', 'text_domain' ),
 		'description'         => __( 'Individual Department of MIMP', 'text_domain' ),
 		'labels'              => $labels,
-		'supports'            => array( 'title', 'editor', 'trackbacks', 'revisions', 'custom-fields', ),
+		'supports'            => array( 'title', 'editor', 'trackbacks', 'revisions', 'custom-fields', 'page-attributes'),
 		'taxonomies'          => array( 'category', 'post_tag' ),
 		'hierarchical'        => true,
 		'public'              => true,
