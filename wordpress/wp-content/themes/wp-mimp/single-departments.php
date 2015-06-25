@@ -48,6 +48,19 @@
         
         <div id="sidebar" class="col-sm-4" role="complementary">
           
+          <?php if ( has_post_thumbnail()) : ?>
+          <div class="featured-image">
+            <?php the_post_thumbnail(); ?>
+          </div>
+          <?php endif; ?>
+                  
+          <section class="well">
+            <h4>Contact us</h4>
+            <?php the_field('mimp_contact_text'); ?>
+            <a href="mailto:<?php the_field('mimp_contact_email'); ?>" class="btn btn-warning" alt="email address">Email us</a>
+            <a href="tel:<?php the_field('mimp_contact_number'); ?>" class="btn btn-link" alt="Radiography's telephone number">Call us</a>
+          </section>
+          
           <?php if ( in_category( 'medical-imaging' )) : ?>
           <div class="featured-image">
            <a href="<?php echo home_url( '/departments/radiography/' ); ?>"> 
@@ -63,23 +76,16 @@
            </a>
           </div>
            <?php endif; ?>
-                  
-          <section class="well">
-            <h4>Contact us</h4>
-            <?php the_field('mimp_contact_text'); ?>
-            <a href="mailto:<?php the_field('mimp_contact_email'); ?>" class="btn btn-warning" alt="email address">Email us</a>
-            <a href="tel:<?php the_field('mimp_contact_number'); ?>" class="btn btn-link" alt="Radiography's telephone number">Call us</a>
-          </section>
 
           <?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
              <?php dynamic_sidebar( 'sidebar1' ); ?>
           <?php endif; ?>
-          
-      <section class="well" id="dropdown-buttons">
-        <h4>Our Departments &amp; Services</h4>
-        <p>Locate the dedicated department and service pages through our <a href="<?php echo home_url( '/departments-and-services/' ); ?>" alt="link to the department and service A-Z" class="">department &amp; services page</a> or the directory below:</p>
-        <?php get_template_part( 'partials/department', 'button' ); ?> <?php get_template_part( 'partials/service', 'button' ); ?>
-      </section>
+
+          <section class="well" id="dropdown-buttons">
+            <h4>Our Departments &amp; Services</h4>
+            <p>Locate the dedicated department and service pages through our <a href="<?php echo home_url( '/departments-and-services/' ); ?>" alt="link to the department and service A-Z" class="">department &amp; services page</a> or the directory below:</p>
+            <?php get_template_part( 'partials/department', 'button' ); ?> <?php get_template_part( 'partials/service', 'button' ); ?>
+          </section>
 
         </div>
        </div> <!-- end #main -->
