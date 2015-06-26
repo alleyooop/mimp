@@ -31,6 +31,14 @@
 				  </article> <!-- end article -->
 
           
+            <?php if(get_field('mimp_case_study')) : ?>
+              <section id="patient-information" class="well-mimp">
+                <div class="well">
+                <?php the_field('mimp_case_study'); ?>
+                </div>
+             </section>
+            <?php endif; ?>
+          
             <?php if(get_field('mimp_team')) : ?>
               <section class="team">
                 <div class="well">
