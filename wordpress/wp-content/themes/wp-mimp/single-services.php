@@ -64,7 +64,7 @@
           
           
           <?php if ( has_post_thumbnail()) : ?>
-            <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
+            <?php the_post_thumbnail('full', array('class' => 'img-responsive hidden-xs')); ?>
           <?php endif; ?>
                   
           <section class="well">

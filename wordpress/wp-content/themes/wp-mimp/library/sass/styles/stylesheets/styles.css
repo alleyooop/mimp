@@ -9257,6 +9257,27 @@ ul#navbar-mobile {
   padding: 5px;
 }
 
+/* line 79, ../sass/_sections.scss */
+.featured-image {
+  margin-bottom: 20px;
+}
+
+/* line 85, ../sass/_sections.scss */
+.well-preview {
+  min-height: 100px;
+}
+/* line 89, ../sass/_sections.scss */
+.well-preview h3 {
+  font-size: 18px;
+  color: #03A9F4;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* line 98, ../sass/_sections.scss */
+.well-preview p {
+  color: #90A4AE;
+}
+
 /* line 1, ../sass/_typography.scss */
 .list-service {
   font-size: 15px;

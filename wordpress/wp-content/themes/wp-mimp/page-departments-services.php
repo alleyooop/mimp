@@ -19,7 +19,7 @@ Template Name: Departments & Services Template
       </div>
 
        <div class="row clearfix">
-        <div id="main" class="col-sm-8" role="main">
+        <div id="main" class="col-sm-12" role="main">
            <article class="filter-main">
               <section class="well branded-well">
                 <p class="lead">Medical Imaging &amp; Medical Physics is a multi-disciplinary department in the heart of South Yorkshire. Find the our range of departments and services below</p>
@@ -32,6 +32,10 @@ Template Name: Departments & Services Template
               </section>
             </article>  
           
+         <div id="services-featured" class="row">
+         </div>
+          
+        <div id="services-all" class="row">
           <article class="filter">
 
             <?php // Get all of the departments
@@ -50,11 +54,19 @@ Template Name: Departments & Services Template
                     $departments->the_post();
                     ?>
 
-                      <section>
-                        <div class="well">
-                          <h3><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title() ?></a></h3>
-                          <?php the_excerpt(); ?>
+                      
+                      <section class="col-sm-3">
+                         <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
+                        <?php if ( has_post_thumbnail()) : ?>
+                         <?php the_post_thumbnail('full', array('class' => 'img-responsive hidden-xs')); ?>
+                        <?php else : ?>
+                          <img src="<?php echo content_url('/themes/wp-mimp/images/had.jpg'); ?>" width="100%" class="img-responsive hidden-xs">
+                        <?php endif; ?>
+                        <div class="well well-preview">
+                          <h3><?php the_title() ?></h3>
+                          <p>Department</p>
                         </div>
+                        </a>
                       </section>
                       
 
@@ -80,11 +92,19 @@ Template Name: Departments & Services Template
                     $services->the_post();
                     ?>
 
-                      <section>
-                        <div class="well">
-                          <h3><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title() ?></a></h3>
-                          <?php the_excerpt(); ?>
+                      
+                      <section class="col-sm-3">
+                        <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
+                        <?php if ( has_post_thumbnail()) : ?>
+                         <?php the_post_thumbnail('full', array('class' => 'img-responsive hidden-xs')); ?>
+                        <?php else : ?>
+                          <img src="<?php echo content_url('/themes/wp-mimp/images/had.jpg'); ?>" width="100%" class="img-responsive hidden-xs">
+                        <?php endif; ?>
+                        <div class="well well-preview">
+                          <h3><?php the_title() ?></h3>
+                          <p>Service</p>
                         </div>
+                       </a>
                       </section>
 
                     <?php
@@ -93,8 +113,10 @@ Template Name: Departments & Services Template
               ?>
 
             </article>
+          </div>
 
-        </div> <!-- end col-8 -->
+
+        </div> <!-- end col-12 -->
          
          
          <div id="sidebar" class="col-sm-4" role="complementary">
