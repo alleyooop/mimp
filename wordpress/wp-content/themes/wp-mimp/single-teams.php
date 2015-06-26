@@ -46,7 +46,7 @@
           <?php if ( in_category( 'medical-imaging' )) : ?>
           <div class="featured-image">
            <a href="<?php echo home_url( '/departments/radiography/' ); ?>"> 
-            <img src="http://placehold.it/500x300?text=Radiology+Placeholder" width="100%" >
+            <img src="<?php echo content_url('/themes/wp-mimp/images/medical_imaging_holder.jpg'); ?>" width="100%" >
            </a>
           </div>
            <?php endif; ?>
@@ -54,7 +54,7 @@
           <?php if ( in_category( 'medical-physics' )) : ?>
           <div class="featured-image">
            <a href="<?php echo home_url( '/departments/medical-physics/' ); ?>"> 
-            <img src="http://placehold.it/500x300?text=Medical+Physics+Placeholder" width="100%" >
+            <img src="<?php echo content_url('/themes/wp-mimp/images/medical_physics_holder.jpg'); ?>" width="100%" >
            </a>
           </div>
            <?php endif; ?>
