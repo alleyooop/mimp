@@ -118,28 +118,6 @@ Template Name: Departments & Services Template
 
         </div> <!-- end col-12 -->
          
-         
-         <div id="sidebar" class="col-sm-4" role="complementary">
-           
-           <section class="well" id="dropdown-buttons">
-            <h4>Our Departments &amp; Services</h4>
-            <p>Locate the dedicated department and service pages through the directory below:</p>
-            <?php get_template_part( 'partials/department', 'button' ); ?> <?php get_template_part( 'partials/service', 'button' ); ?>
-          </section>
-           
-           <section>
-            <?php // place an image here of about 360 by 320 ?>
-           </section>
-                  
-          <?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
-             <?php dynamic_sidebar( 'sidebar1' ); ?>
-          <?php endif; ?>
-
-        </div>
-         
-         
-         
-         
       </div> <!-- end row -->
 
 <?php get_footer(); ?>
