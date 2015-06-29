@@ -55,7 +55,7 @@ Template Name: Departments & Services Template
                     ?>
 
                       
-                      <section class="col-sm-3">
+                      <section class="col-sm-3 col-md-4">
                          <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
                         <?php if ( has_post_thumbnail()) : ?>
                          <?php the_post_thumbnail('full', array('class' => 'img-responsive hidden-xs')); ?>
@@ -93,7 +93,7 @@ Template Name: Departments & Services Template
                     ?>
 
                       
-                      <section class="col-sm-3">
+                      <section class="col-sm-3 col-md-4">
                         <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
                         <?php if ( has_post_thumbnail()) : ?>
                          <?php the_post_thumbnail('full', array('class' => 'img-responsive hidden-xs')); ?>
