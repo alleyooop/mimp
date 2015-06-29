@@ -35,8 +35,9 @@ Template Name: Departments & Services Template
          <div id="services-featured" class="row">
          </div>
           
-        <div id="services-all" class="row">
+        <div id="services-all">
           <article class="filter">
+            <div class="row">
 
             <?php // Get all of the departments
 
@@ -49,13 +50,15 @@ Template Name: Departments & Services Template
 
                 $departments = new WP_Query( $args );
 
+                
+
                 if( $departments->have_posts() ){
                   while( $departments->have_posts() ) {
                     $departments->the_post();
                     ?>
 
                       
-                      <section class="col-sm-3 col-md-4">
+                      <section class="col-sm-4 col-md-3">
                          <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
                         <?php if ( has_post_thumbnail()) : ?>
                          <?php the_post_thumbnail('full', array('class' => 'img-responsive hidden-xs')); ?>
@@ -69,11 +72,12 @@ Template Name: Departments & Services Template
                         </a>
                       </section>
                       
-
+                      
                     <?php
                   }
                 }
               ?>
+            </div>
 
 
             <?php // Get all of the services
@@ -85,6 +89,9 @@ Template Name: Departments & Services Template
                   'posts_per_page' => -1
                 );
 
+                $i = 0;
+                echo '<div class="row">';
+
                 $services = new WP_Query( $args );
 
                 if( $services->have_posts() ){
@@ -92,8 +99,9 @@ Template Name: Departments & Services Template
                     $services->the_post();
                     ?>
 
+                      <?php  if($i % 4 == 0) {echo '</div><div class="row">';} ?>
                       
-                      <section class="col-sm-3 col-md-4">
+                      <section class="col-sm-4 col-md-3">
                         <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
                         <?php if ( has_post_thumbnail()) : ?>
                          <?php the_post_thumbnail('full', array('class' => 'img-responsive hidden-xs')); ?>
@@ -106,6 +114,8 @@ Template Name: Departments & Services Template
                         </div>
                        </a>
                       </section>
+            
+                    <?php $i++; ?>
 
                     <?php
                   }
