@@ -36,6 +36,7 @@ Template Name: Patient Information Page
 				  </article> <!-- end article -->
           
           <!-- Qs -->
+       <?php if(get_field('mimp_how_do_i_get_here')) : ?>
         <article class="well question" id="how_do_i_get_here">
           <header>
            <h3>How do I get here?</h3>
@@ -45,7 +46,9 @@ Template Name: Patient Information Page
              <a href="#">Back to the top</a>
           </section>
         </article>
+        <?php endif; ?>     
           
+        <?php if(get_field('mimp_how_do_i_make_an_appointment')) : ?>
         <article class="well question" id="how_do_i_make_an_appointment">
           <header>
            <h3>How do I make an appointment?</h3>
@@ -55,7 +58,9 @@ Template Name: Patient Information Page
              <a href="#">Back to the top</a>
           </section>
         </article>
+        <?php endif; ?>  
           
+        <?php if(get_field('mimp_how_do_i_change_an_appointment')) : ?>
         <article class="well question" id="how_do_i_change_an_appointment">
           <header>
            <h3>How do I change an appointment?</h3>
@@ -65,7 +70,9 @@ Template Name: Patient Information Page
              <a href="#">Back to the top</a>
           </section>
         </article>
+        <?php endif; ?>  
           
+        <?php if(get_field('mimp_how_do_i_cancel_an_appointment')) : ?>
         <article class="well question" id="how_do_i_cancel_an_appointment">
           <header>
            <h3>How do I cancel an appointment?</h3>
@@ -75,7 +82,9 @@ Template Name: Patient Information Page
              <a href="#">Back to the top</a>
           </section>
         </article>
+        <?php endif; ?>  
           
+        <?php if(get_field('mimp_what_should_i_expect_at_an_appointment')) : ?>
         <article class="well question" id="what_should_i_expect_at_an_appointment">
           <header>
            <h3>What should I expect at an appointment?</h3>
@@ -85,7 +94,9 @@ Template Name: Patient Information Page
              <a href="#">Back to the top</a>
           </section>
         </article>
+        <?php endif; ?>  
           
+        <?php if(get_field('mimp_what_should_i_do_before_an_appointment')) : ?>
         <article class="well question" id="what_should_i_do_before_an_appointment">
           <header>
            <h3>What should I do before an appointment?</h3>
@@ -95,7 +106,9 @@ Template Name: Patient Information Page
              <a href="#">Back to the top</a>
           </section>
         </article>
+        <?php endif; ?>  
           
+        <?php if(get_field('mimp_will_i_be_provided_any_medicine')) : ?>
         <article class="well question" id="will_i_be_provided_any_medicine">
           <header>
            <h3>Will I be provided any medicine?</h3>
@@ -105,7 +118,9 @@ Template Name: Patient Information Page
              <a href="#">Back to the top</a>
           </section>
         </article>
+        <?php endif; ?>  
           
+        <?php if(get_field('mimp_how_long_will_i_stay_at_hospital_how_am_i_evaluated')) : ?>
         <article class="well question" id="how_long_will_i_stay_at_hospital_how_am_i_evaluated">
           <header>
            <h3>How long will I stay at hospital, how am I evaluated?</h3>
@@ -115,7 +130,10 @@ Template Name: Patient Information Page
              <a href="#">Back to the top</a>
           </section>
         </article>
+        <?php endif; ?>  
           
+          
+         <?php if(get_field('mimp_how_can_i_get_in_touch')) : ?>
         <article class="well question" id="how_can_i_get_in_touch">
           <header>
            <h3>How can I get in touch?</h3>
@@ -125,29 +143,58 @@ Template Name: Patient Information Page
              <a href="#">Back to the top</a>
           </section>
         </article>
-          
+        <?php endif; ?>  
           
         </div>
         
         <div id="sidebar" class="col-sm-4" role="complementary">
           <?php if ( has_post_thumbnail()) : ?>
             <?php the_post_thumbnail('full', array('class' => 'img-responsive hidden-xs')); ?>
-          <?php endif; ?>             
+          <?php endif; ?>     
+          
           <section class="well">
             <h4>Questions</h4>
             <ul class="list-unstyled">
+              
+              <?php if(get_field('mimp_how_do_i_get_here')) : ?>
               <li><a href="#how_do_i_get_here">How do I get here?</a></li>
+              <?php endif; ?>
+              
+              <?php if(get_field('mimp_how_do_i_make_an_appointment')) : ?>
               <li><a href="#how_do_i_make_an_appointment">How do I make an appointment?</a></li>
+              <?php endif; ?>
+              
+              <?php if(get_field('mimp_how_do_i_change_an_appointment')) : ?>
               <li><a href="#how_do_i_change_an_appointment">How do I change an appointment?</a></li>
+              <?php endif; ?>
+              
+              <?php if(get_field('mimp_how_do_i_cancel_an_appointment')) : ?>
               <li><a href="#how_do_i_cancel_an_appointment">How do I cancel an appointment?</a></li>
+              <?php endif; ?>
+              
+              <?php if(get_field('mimp_what_should_i_expect_at_an_appointment')) : ?>
               <li><a href="#what_should_i_expect_at_an_appointment">What should I expect at an appointment?</a></li>
+              <?php endif; ?>
+              
+              <?php if(get_field('mimp_what_should_i_do_before_an_appointment')) : ?>
               <li><a href="#what_should_i_do_before_an_appointment">What should I do before an appointment?</a></li>
+              <?php endif; ?>
+              
+              <?php if(get_field('mimp_will_i_be_provided_any_medicine')) : ?>
               <li><a href="#will_i_be_provided_any_medicine">Will I be provided any medicine?</a></li>
+              <?php endif; ?>
+              
+              <?php if(get_field('mimp_how_long_will_i_stay_at_hospital_how_am_i_evaluated')) : ?>
               <li><a href="#how_long_will_i_stay_at_hospital_how_am_i_evaluated">How long will I stay at hospital, how am I evaluated?</a></li>
+              <?php endif; ?>
+              
+              <?php if(get_field('mimp_how_can_i_get_in_touch')) : ?>
               <li><a href="#how_can_i_get_in_touch">How can I get in touch?</a></li>
+              <?php endif; ?>
             </ul>
           </section>
-
+          
+          
          <section class="well" id="dropdown-buttons">
             <h4>Our Departments &amp; Services</h4>
             <p>Locate the dedicated department and service pages through our <a href="<?php echo home_url( '/departments-and-services/' ); ?>" alt="link to the department and service A-Z" class="">department &amp; services page</a> or the directory below:</p>
