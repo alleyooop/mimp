@@ -96,6 +96,14 @@
           </div>
            <?php endif; ?>
           
+           <?php if(get_field('twitter_recs')) : ?>
+              <section>
+                <div class="well">
+                <?php the_field('twitter_rec'); ?>
+                </div>
+             </section>
+          <?php endif; ?>
+          
           <?php if(get_field('commercial_sidebar')) : ?>
               <section>
                 <div class="well">
