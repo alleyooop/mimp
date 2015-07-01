@@ -79,7 +79,7 @@
             <img src="<?php echo content_url('/themes/wp-mimp/images/medical_imaging_holder.jpg'); ?>" width="100%" >
            </a>
           </div>
-           <?php endif; ?>
+          <?php endif; ?>
           
           <?php if ( in_category( 'medical-physics' )) : ?>
           <div class="featured-image">
@@ -87,7 +87,7 @@
             <img src="<?php echo content_url('/themes/wp-mimp/images/medical_physics_holder.jpg'); ?>" width="100%" >
            </a>
           </div>
-           <?php endif; ?>
+          <?php endif; ?>
 
           <?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
              <?php dynamic_sidebar( 'sidebar1' ); ?>

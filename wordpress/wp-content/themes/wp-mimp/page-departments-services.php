@@ -58,7 +58,7 @@ Template Name: Departments & Services Template
                     ?>
 
                       
-                      <section class="col-sm-4 col-md-3">
+                      <section class="col-sm-6 col-md-3">
                          <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
                         <?php if ( has_post_thumbnail()) : ?>
                          <?php the_post_thumbnail('full', array('class' => 'img-responsive hidden-xs')); ?>
@@ -101,7 +101,7 @@ Template Name: Departments & Services Template
 
                       <?php  if($i % 4 == 0) {echo '</div><div class="row">';} ?>
                       
-                      <section class="col-sm-4 col-md-3">
+                      <section class="col-sm-6 col-md-3">
                         <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
                         <?php if ( has_post_thumbnail()) : ?>
                          <?php the_post_thumbnail('full', array('class' => 'img-responsive hidden-xs')); ?>

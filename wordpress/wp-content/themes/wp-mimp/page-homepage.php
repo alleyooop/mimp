@@ -5,18 +5,12 @@ Template Name: Homepage
 ?>
 
 <?php get_header(); ?>
-			
-
-      <!-- hack -->
-        </div>
-      <!-- hack -->
 
 			<div id="content">
 			
 				<div id="main" class="clearfix" role="main">
 
 					<section id="intro">
-            <div class="container">
               <div class="row">
                 <div class="col-md-12">
                   <div class="brand-header">
@@ -25,11 +19,9 @@ Template Name: Homepage
                   </div>
                 </div>
               </div>
-            </div>
           </section>
 
           <section id="mimp-blocks">
-            <div class="container">
               <div class="row">
                   <div class="col-md-3 col-sm-6 col-xs-12">
                     <a href="<?php echo home_url( '/patient-information/' ); ?>">
@@ -71,14 +63,12 @@ Template Name: Homepage
                     </a>
                   </div>
               </div>
-            </div>
           </section>
 			
 				</div> <!-- end #main -->
     
 			</div> <!-- end #content -->
 
-      <div class="container">
        
 
 <?php get_footer(); ?>
